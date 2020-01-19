@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="index.html">Kevin Hall</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 mx-auto">
+                <div class="content">
+                    <h1> Password Generator </h1>
+                    <h7>Choose a length and which characters you would like included, then select "Generate Password"</h7>
+                    <br>
+                    <div class="result-container">
+                        <span id="result" placeholder="Password will appear here"></span>
+                    </div>
+                    <br>
+                    <input type="number" min="8" max="128" id="length" placeholder="Length"> <br> <br>
+                    <button id="generate">Generate Password</button>
+                    <button onclick="copyPassword()">Copy</button>
+                    <div id="numChars"></div>
+                    <br>
+                    <h5>Included Characters: </h5>
+                    <div class="setting">
+                        <input type="checkbox" id="uppercase" checked/>
+                        <label>Uppercase</label>
+                    </div>
+                    <div class="setting">
+                        <input type="checkbox" id="lowercase" checked/>
+                        <label>Lowercase</label>
+                    </div>
+                    <div class="setting">
+                        <input type="checkbox" id="numbers" checked/>
+                        <label>Numbers</label>
+                    </div>
+                    <div class="setting">
+                        <input type="checkbox" id="symbols" checked/>
+                        <label>Symbols</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
